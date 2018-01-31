@@ -2,7 +2,7 @@
 fav_colours = ["red", "white", "black", "neon green", "ultraviolet"]
 ages = [26, 12, 26, 33]
 coin_flips = [true, false, false, true, true, true]
-artists = ["DJ Sprinkles", "Marcel Dettmann", "Galcher Lustwek"]
+artists = ["DJ Sprinkles", "Marcel Dettmann", "Galcher Lustwerk"]
 fav_colours_symbols = [:red, :white, :black, :neon_green, :ultraviolet]
 
 words = { "book" => "paper with knowledge", "mouse" => "tool", "mousepad" => "carpet for mouse"}
@@ -19,7 +19,7 @@ puts movies["Lord of the Rings"]
 
 # EXERCISE 2
 puts fav_colours.last
-cities["New York City"] = "8000000"
+cities["New York City"] = 8000000
 coin_flips.reverse!
 puts cities["Mexico City"]
 
@@ -38,3 +38,45 @@ puts ages.sort!.reverse!
 
 movies["Beauty and the Beast"] = [1991, 2017]
 puts movies
+
+# EXERCISE 4
+ages_younger_than_30 = ages.select do |age|
+  age <= 30
+end
+puts ages_younger_than_30
+
+puts ages.max
+
+heads_count = coin_flips.select do |flip|
+  flip == true
+end
+puts heads_count.length
+
+artists.delete("Galcher Lustwerk")
+puts artists
+
+cities["Mexico City"] = 30000000
+
+### EXERCISE 5 ###
+sum_of_populations = 0
+cities.values.each do |population|
+  sum_of_populations += population
+end
+puts sum_of_populations
+
+friends.each do |name, age|
+  if age <= 15
+    puts "#{name} is young."
+  else
+    puts "#{name} is old."
+  end
+end
+
+puts fav_colours[-2..-1]
+
+ages.map! do |age|
+  age += 1
+end
+puts ages
+
+fav_colours << "yellow" << "blood orange"
