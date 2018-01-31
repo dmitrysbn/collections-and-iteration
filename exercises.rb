@@ -1,0 +1,5 @@
+fav_colours = ["red", "white", "black", "neon green", "ultraviolet"]
+ages = [26, 12, 26, 33]
+coin_flips = [true, false, false, true, true, true]
+artists = ["DJ Sprinkles", "Marcel Dettmann", "Galcher Lustwek"]
+fav_colours_symbols = [:red, :white, :black, :neon_green, :ultraviolet]
