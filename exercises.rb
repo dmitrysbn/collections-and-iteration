@@ -114,3 +114,22 @@ not_islands = countries_info.select do |country|
 end
 puts countries_info
 puts not_islands
+
+### EXERCISE 8 ###
+expenses = [1500, 625.75, 9.38, 6.66]
+sum_of_expenses = 0
+expenses.each do |expense|
+  sum_of_expenses += expense
+end
+puts sum_of_expenses
+
+def sum_of_expenses(array)
+  sum_of_expenses = 0
+  array.each do |number|
+    sum_of_expenses += number
+  end
+  return sum_of_expenses
+end
+
+puts sum_of_expenses([45, 60, 75])
+puts sum_of_expenses([1, 1, 2])
