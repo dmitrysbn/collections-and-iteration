@@ -26,3 +26,15 @@ puts cities["Mexico City"]
 artists.each do |artist|
   puts "I think #{artist} is great."
 end
+
+# EXERCISE 3
+puts artists[0..1]
+
+movies.each do |movie, year|
+  puts "#{movie} came out in #{year}."
+end
+
+puts ages.sort!.reverse!
+
+movies["Beauty and the Beast"] = [1991, 2017]
+puts movies
