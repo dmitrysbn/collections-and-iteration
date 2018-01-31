@@ -1,3 +1,4 @@
+# EXERCISE 0
 fav_colours = ["red", "white", "black", "neon green", "ultraviolet"]
 ages = [26, 12, 26, 33]
 coin_flips = [true, false, false, true, true, true]
@@ -9,8 +10,19 @@ movies = { "The Matrix" => 1999, "Lord of the Rings" => 2001, "2001: A Space Ody
 cities = { "Mexico City" => 25000000, "Moscow" => 20000000, "Toronto" => 3000000}
 friends = {"Andrey" => 12, "Alex" => 33, "Vlad" => 27}
 
+# EXERCISE 1
 puts coin_flips
 puts fav_colours[0]
 puts ages.sort
 ages << 0
 puts movies["Lord of the Rings"]
+
+# EXERCISE 2
+puts fav_colours.last
+cities["New York City"] = "8000000"
+coin_flips.reverse!
+puts cities["Mexico City"]
+
+artists.each do |artist|
+  puts "I think #{artist} is great."
+end
