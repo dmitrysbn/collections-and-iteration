@@ -86,6 +86,31 @@ movies_by_year = { 1999 => ["The Matrix", "Star Wars: Episode 1", "The Mummy"], 
 
 phone_rows = [[1, 2, 3], [4, 5, 6], [7, 8, 9], ["*", 0, "#"]]
 
-countries_info = [{:name => "Canada", :contitent => "North America", :island => "no"}, {:name => "Russia", :contitent => "Asia", :island => "no"}, {:name => "Madagascar", :contitent => "Africa", :island => "yes"}]
+countries_info = [{:name => "Canada", :continent => "North America", :island => "no"}, {:name => "Russia", :continent => "Asia", :island => "no"}, {:name => "Madagascar", :continent => "Africa", :island => "yes"}]
 
 ### EXERCISE 7 ###
+20.times do
+  puts "I will not skateboard in the halls"
+end
+
+Array.new(20, "I will not skateboard in the halls")
+
+puts (1..50).to_a
+
+sum_of_values = 0
+(1..50).to_a.each do |number|
+  sum_of_values += number
+end
+puts sum_of_values
+
+triple_array = []
+(1..50).to_a.each do |number|
+  triple_array << number << number << number
+end
+puts triple_array
+
+not_islands = countries_info.select do |country|
+  country[:island] == "no"
+end
+puts countries_info
+puts not_islands
