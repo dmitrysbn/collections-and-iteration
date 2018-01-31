@@ -80,3 +80,12 @@ end
 puts ages
 
 fav_colours << "yellow" << "blood orange"
+
+### EXERCISE 6 ###
+movies_by_year = { 1999 => ["The Matrix", "Star Wars: Episode 1", "The Mummy"], 2009 => ["Avatar", "Star Trek", "District 9"], 2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]}
+
+phone_rows = [[1, 2, 3], [4, 5, 6], [7, 8, 9], ["*", 0, "#"]]
+
+countries_info = [{:name => "Canada", :contitent => "North America", :island => "no"}, {:name => "Russia", :contitent => "Asia", :island => "no"}, {:name => "Madagascar", :contitent => "Africa", :island => "yes"}]
+
+### EXERCISE 7 ###
