@@ -133,3 +133,35 @@ end
 
 puts sum_of_expenses([45, 60, 75])
 puts sum_of_expenses([1, 1, 2])
+
+### EXERCISE 9 ###
+grocery_list = ["avocados", "pistachios", "bananas", "meth"]
+puts grocery_list
+
+# grocery_list.map! do |grocery|
+#   grocery = "* " + grocery
+# end
+# puts grocery_list
+
+def list(groceries)
+  list = []
+  groceries.each do |grocery|
+    list << "* " + grocery
+  end
+  return list
+end
+
+puts list(grocery_list)
+puts grocery_list.length
+puts grocery_list
+
+if grocery_list.include?("bananas")
+  puts "You don't need to pick up bananas today."
+else
+  puts "You need to pick up bananas."
+end
+
+puts grocery_list[-2]
+puts list(grocery_list).sort
+grocery_list.delete("meth")
+puts list(grocery_list)
