@@ -138,6 +138,8 @@ puts sum_of_expenses([1, 1, 2])
 grocery_list = ["avocados", "pistachios", "bananas", "meth"]
 puts grocery_list
 
+grocery_list << "rice"
+
 # grocery_list.map! do |grocery|
 #   grocery = "* " + grocery
 # end
