@@ -1,5 +1,5 @@
 # EXERCISE 0
-fav_colours = ["red", "white", "black", "neon green", "ultraviolet"]
+fav_colours = ["Red", "White", "Black", "Neon green", "Ultraviolet"]
 ages = [26, 12, 26, 33]
 coin_flips = [true, false, false, true, true, true]
 artists = ["DJ Sprinkles", "Marcel Dettmann", "Galcher Lustwerk"]
